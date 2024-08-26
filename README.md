@@ -20,21 +20,21 @@
 
 # Installation
 
-1. PDF_RENAMER.exeを含むPDF_RENAMERフォルダをPCの任意の場所にコピーする
-2. PDF_RENAMERフォルダにPatternFolderをコピーする
-3. エクスプローラーを起動し、アドレスバーに「shell:sendto」と入力すると、SendToフォルダが開かれる
-4. PDF_RENAMERフォルダ内のPDF_RENAMER.exeのショートカットを作成し、SendToフォルダに保存する
+1. PDF_RENAMER.exeを含むPDF_RENAMERフォルダをPCの任意の場所にコピーする。
+2. PDF_RENAMERフォルダにPatternFolderをコピーする。
+3. エクスプローラーを起動し、アドレスバーに「shell:sendto」と入力すると、SendToフォルダが開かれる。
+4. PDF_RENAMERフォルダ内のPDF_RENAMER.exeのショートカットを作成し、SendToフォルダに保存する。
    
 # Usage
 
 **※本ソースコードは自己責任で使用してください。**
 
-1. リネームしたいファイルを選択し、右クリックから送るメニュー内のPDF_RENAMERを選択する
-2. 選択したファイルが正しくリネームされたことを確認する
+1. リネームしたいファイルを選択し、右クリックから送るメニュー内のPDF_RENAMERを選択する。
+2. 選択したファイルが正しくリネームされたことを確認する。
 
 * 複数のパターンが定義されている場合は、全てのパターンが一致した場合のみリネーム処理を実行します。
-* PatternFolder内のパターンファイルを追加・修正することで任意のパターンを指定することができます
-* debugオプションを指定することでPDFから抽出したテキストをファイルに保存することができます
+* PatternFolder内のパターンファイルを追加・修正することで任意のパターンを指定することができます。
+* debugオプションを指定することでPDFから抽出したテキストをファイルに保存することができます。
   ```
   PDF_RENAMER.exe /debug AAA.pdf BBB.pdf
   ```
