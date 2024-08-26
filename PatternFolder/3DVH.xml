@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patterns>
+  <Pattern>
+    <Keyword>Software</Keyword>
+    <Start>Product Version:\s</Start>
+    <End>\s</End>
+  </Pattern>
+  <Pattern>
+    <Keyword>PatientId</Keyword>
+    <Start>\s\/</Start>
+    <End>\n</End>
+  </Pattern>
+  <Pattern>
+    <Keyword>PatientName</Keyword>
+    <Start>Dose\s\(Comparison\):\n</Start>
+    <End>\s\/</End>
+  </Pattern>
+  <Pattern>
+    <Keyword>Reference</Keyword>
+    <Start>RTPlan\nFile:\s</Start>
+    <End>.dcm\n</End>
+  </Pattern>
+  <Pattern>
+    <Keyword>Comparison</Keyword>
+    <Start>ACPDP\nFile:\s</Start>
+    <End>.acml\n</End>
+  </Pattern>
+  <!-- 連結順序を定義 -->
+  <Order>
+    <Keyword>PatientId</Keyword>
+    <Keyword>PatientName</Keyword>
+    <Keyword>Reference</Keyword>
+    <Keyword>Comparison</Keyword>
+  </Order>
+  <Title>3DVH</Title>
+</Patterns>

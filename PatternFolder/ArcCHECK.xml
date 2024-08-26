@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patterns>
+  <Pattern>
+    <Keyword>Software</Keyword>
+    <Start>^SNC Patient QA of Dose Distribution</Start>
+    <End>\n</End>
+  </Pattern>
+  <Pattern>
+    <Keyword>PatientId</Keyword>
+    <Start>Patient\sID\s</Start>
+    <End>\nPlan\sName</End>
+  </Pattern>
+  <Pattern>
+    <Keyword>PatientName</Keyword>
+    <Start>Hospital\s\n</Start>
+    <End>\sPatient\sName</End>
+  </Pattern>
+  <Pattern>
+    <Keyword>PlanID</Keyword>
+    <Start>Plan\sName\s</Start>
+    <End>\nPlan\sID</End>
+  </Pattern>
+    <Pattern>
+    <Keyword>DeviceName1</Keyword>
+    <Start>\n</Start>
+    <End>\s\(Set\s1\)</End>
+  </Pattern>
+  <Pattern>
+    <Keyword>DeviceName2</Keyword>
+    <Start>\n</Start>
+    <End>\s\(Set\s2\)</End>
+  </Pattern>
+  <!-- 連結順序を定義 -->
+  <Order>
+    <Keyword>PatientId</Keyword>
+    <Keyword>PatientName</Keyword>
+    <Keyword>PlanID</Keyword>
+    <Keyword>DeviceName1</Keyword>
+    <Keyword>DeviceName2</Keyword>
+  </Order>
+  <Title>ArcCHECK</Title>
+</Patterns>
