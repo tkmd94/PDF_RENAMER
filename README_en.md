@@ -33,6 +33,7 @@ None
 2. Confirm that the selected file(s) have been renamed correctly.
 
 * The renaming process will only be executed if all patterns are matched when multiple patterns are defined.
+* If the file is renamed, subsequent patterns are skipped.
 * You can specify any pattern by adding or modifying pattern files within the PatternFolder.
 * You can save extracted text to a file by specifying the debug option:
   ```
